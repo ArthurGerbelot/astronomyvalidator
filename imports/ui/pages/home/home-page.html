@@ -1,0 +1,21 @@
+<Template name="HomePage">
+  <form class="item-form">
+    <div>
+      <label for="item-name">Name</label>
+      <input type="text" id="item-name" name="name" class="form-control item-field" placeholder="The name"/>
+      {{#if hasError 'name'}}
+        <span class="error">{{getError 'name'}}</span>
+      {{/if}}
+    </div>
+
+    <div>
+      <label for="item-width">Width</label>
+      <input type="number" id="item-width" name="width" class="form-control item-field"/>
+      {{#if hasError 'width'}}
+        <span class="error">{{getError 'width'}}</span>
+      {{/if}}
+    </div>
+
+    <input type="submit" value="Submit"/>
+  </form>
+</Template>
