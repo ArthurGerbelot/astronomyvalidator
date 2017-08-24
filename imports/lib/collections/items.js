@@ -3,7 +3,7 @@ import { Class } from 'meteor/jagi:astronomy'
 const Items = new Mongo.Collection('items')
 const Item = Class.create({
   name: 'Item',
-  collection: Item,
+  collection: Items,
   fields: {
     // Name
     name: {
